@@ -1,0 +1,19 @@
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#header a img {
+    bottom: 10px;
+    position: relative;
+}
+
+#cover{
+    background-color: #F00;
+    height: 350px;
+}
+
+.nav-property{
+    height: 50px;
+    background-color: #fff;
+}
