@@ -1,3 +1,4 @@
+/*Header Nav Bar Styles*/
 .navbar {
     border-radius: 0px;
     margin-bottom: 0px;
@@ -8,12 +9,74 @@
     position: relative;
 }
 
+#header ul{
+    display: none;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+@media (max-width: 768px) {
+    #header ul{
+        display: block;
+    }
+}
+
+/*Cover Styles*/
 #cover{
     background-color: #F00;
     height: 350px;
 }
 
+.nav-container{
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #fff;
+}
+
+#cover div .active{
+    background-color: #FFF;
+    color: #f00;
+}
+
 .nav-property{
     height: 50px;
-    background-color: #fff;
+    text-align: right;
 }
+
+#cover div a {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    padding-top: 15px;
+    text-decoration: none;
+    width: 100%;
+}
+
+#cover div a:hover{
+    background-color: #FFF;
+    color: #f00;
+}
+
+#cover div a:first-child{
+    margin-top: 25px;
+}
+
+#cover div a:last-child{
+    border-bottom: none;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+    #cover div a{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    #cover div:first-child{
+        display: none;
+    }
+}
+

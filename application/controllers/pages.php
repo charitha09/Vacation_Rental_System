@@ -5,13 +5,73 @@ class Pages extends CI_Controller {
         $page = 'home';
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
-        }else{				
-            $data['title'] = ucfirst($page);//Capitalize the first letter for title
+        }else{		
+            $data = array('title' => 'HOME', 'pgname' => $page);
             //Loarding DOM
             $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
-    } 
+    }
+    
+    public function about() {
+        $page = 'about';
+        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
+            show_404();//if requested page not exsists
+        }else{		
+            $data = array('title' => 'ABOUT THE PROPERTY', 'pgname' => $page);
+            //Loarding DOM
+            $this->load->view('templates/html_header.php', $data);
+            $this->load->view('pages/'.$page, $data);				
+        }
+    }
+    
+    public function gallery() {
+        $page = 'gallery';
+        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
+            show_404();//if requested page not exsists
+        }else{		
+            $data = array('title' => 'GALLERY', 'pgname' => $page);
+            //Loarding DOM
+            $this->load->view('templates/html_header.php', $data);
+            $this->load->view('pages/'.$page, $data);				
+        }
+    }
+    
+    public function location() {
+        $page = 'location';
+        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
+            show_404();//if requested page not exsists
+        }else{		
+            $data = array('title' => 'LOCATION', 'pgname' => $page);
+            //Loarding DOM
+            $this->load->view('templates/html_header.php', $data);
+            $this->load->view('pages/'.$page, $data);				
+        }
+    }
+
+    public function rates() {
+        $page = 'rates';
+        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
+            show_404();//if requested page not exsists
+        }else{		
+            $data = array('title' => 'RATES & RESERVATION', 'pgname' => $page);
+            //Loarding DOM
+            $this->load->view('templates/html_header.php', $data);
+            $this->load->view('pages/'.$page, $data);				
+        }
+    }
+    
+    public function contact() {
+        $page = 'contact';
+        if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
+            show_404();//if requested page not exsists
+        }else{		
+            $data = array('title' => 'CONTACT US', 'pgname' => $page);
+            //Loarding DOM
+            $this->load->view('templates/html_header.php', $data);
+            $this->load->view('pages/'.$page, $data);				
+        }
+    }
 
     public function hello() { 
             echo "This is hello function."; 
