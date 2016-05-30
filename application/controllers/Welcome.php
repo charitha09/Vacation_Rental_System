@@ -25,7 +25,6 @@ class Welcome extends CI_Controller {
         }else{		
             $data = array('title' => 'HOME', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }

@@ -8,7 +8,6 @@ class Pages extends CI_Controller {
         }else{		
             $data = array('title' => 'HOME', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }
@@ -20,7 +19,6 @@ class Pages extends CI_Controller {
         }else{		
             $data = array('title' => 'ABOUT THE PROPERTY', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }
@@ -32,7 +30,6 @@ class Pages extends CI_Controller {
         }else{		
             $data = array('title' => 'GALLERY', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }
@@ -44,7 +41,6 @@ class Pages extends CI_Controller {
         }else{		
             $data = array('title' => 'LOCATION', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }
@@ -56,7 +52,6 @@ class Pages extends CI_Controller {
         }else{		
             $data = array('title' => 'RATES & RESERVATION', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }
@@ -68,7 +63,6 @@ class Pages extends CI_Controller {
         }else{		
             $data = array('title' => 'CONTACT US', 'pgname' => $page);
             //Loarding DOM
-            $this->load->view('templates/html_header.php', $data);
             $this->load->view('pages/'.$page, $data);				
         }
     }
