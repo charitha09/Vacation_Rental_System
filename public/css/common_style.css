@@ -1,3 +1,12 @@
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #337ab7;
+    text-decoration: none;
+}
+
 /*Header Nav Bar Styles*/
 .navbar {
     border-radius: 0px;
@@ -125,5 +134,94 @@
 #footer .copyrights p{
     padding-top: 3px;
     color: #7a7a7b;
+    text-align: center;
 }
+
+#footer .seperator-line{
+    position: relative;
+    top: 8px;
+    height: 36px;
+    border-left: 1px solid #fff;
+}
+
+#footer .contact div{
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .contact a{
+    position: relative;
+    top: 3px;
+}
+
+#footer .contact a i{
+    color: #000;
+}
+
+#footer .contact a b{
+    color: #000;
+}
+
+@media (max-width: 1160px) {
+    #footer .contact{
+        font-size: 0.82em;;
+    }
+}
+
+@media (max-width: 980px) {
+    #footer .contact{
+        width: 100%;
+    }
+    #footer .info{
+        height: 100px;
+    }
+    #footer{
+        height: 125px;
+    }
+    #footer .seperator-line{
+        border: none;
+    }
+    #footer .social{ 
+        width: 100%;
+    }   
+}
+
+@media (max-width: 768px) {
+    #footer{
+        height: 75px;
+    }
+    #footer .contact{
+        display: none;
+    }
+    #footer .social div{
+        display: none;
+    }
+    #footer .info{
+        height: 50px;
+    }
+    #footer .social{
+        text-align: center;
+    }
+    #footer .social a{
+        padding: 0 6%;
+    }
+    #footer .copyrights div:first-child{
+        display: none;
+    }   
+}
+
+@media (max-width: 470px) {
+    #footer{
+        font-size: 0.5em;
+        height: 40px;
+    }    
+    #footer .info{
+        height: 25px;
+    }
+    #footer .copyrights{
+        height: 15px;
+    }
+}
+
 
