@@ -3,10 +3,11 @@ class Pages extends CI_Controller {
 
     public function index() {
         $page = 'home';
+        $pgindex = 0;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'HOME', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }
@@ -14,10 +15,11 @@ class Pages extends CI_Controller {
     
     public function about() {
         $page = 'about';
+        $pgindex = 1;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'ABOUT THE PROPERTY', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }
@@ -25,10 +27,11 @@ class Pages extends CI_Controller {
     
     public function gallery() {
         $page = 'gallery';
+        $pgindex = 2;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'GALLERY', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }
@@ -36,10 +39,11 @@ class Pages extends CI_Controller {
     
     public function location() {
         $page = 'location';
+        $pgindex = 3;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'LOCATION', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }
@@ -47,10 +51,11 @@ class Pages extends CI_Controller {
 
     public function rates() {
         $page = 'rates';
+        $pgindex = 4;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'RATES & RESERVATION', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }
@@ -58,17 +63,14 @@ class Pages extends CI_Controller {
     
     public function contact() {
         $page = 'contact';
+        $pgindex = 5;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'CONTACT US', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }
     }
-
-    public function hello() { 
-            echo "This is hello function."; 
-    } 
 } 
 ?>

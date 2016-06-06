@@ -20,10 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index() {
         $page = 'home';
+        $pgindex = 0;
         if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php')){
             show_404();//if requested page not exsists
         }else{		
-            $data = array('title' => 'HOME', 'pgname' => $page);
+            $data = array('title' => 'HOME', 'pgname' => $page, 'pgindex' => $pgindex);
             //Loarding DOM
             $this->load->view('pages/'.$page, $data);				
         }

@@ -12,6 +12,20 @@
     <div class="container">
         <?php $this->load->view('templates/cover.php'); ?>        
     </div>
+    <div class="col-sm-12">
+        <div class="col-sm-3">
+            
+        </div>
+        <div class="col-sm-3">
+            
+        </div>
+        <div class="col-sm-3">
+            
+        </div>
+        <div class="col-sm-3">
+            
+        </div>
+    </div>
     <?php $this->load->view('templates/footer.php'); ?>
 </body>			
 </html>

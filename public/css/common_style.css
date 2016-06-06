@@ -36,6 +36,7 @@ a:hover{
 #cover{
     background-color: #F00;
     height: 350px;
+    overflow: hidden;
 }
 
 .nav-container{
@@ -93,6 +94,42 @@ a:hover{
     width: 100%;
     height: 100%;
 }
+
+#cover-footer {
+    background-color: #000;
+    border-top: 1px solid #ccc;
+    bottom: 60px;
+    height: 60px;
+    opacity: 0.3;
+    position: relative;
+    z-index: 101;
+}
+
+#cover-footer div:first-child{
+    margin-top: 10px;
+    height: 30px;
+}
+
+#cover-footer div:first-child h2{
+    float: right;
+    margin: 0;
+    padding: 0;
+    color: #ff9c00;
+    font-size: 1.7em;
+}
+
+#cover-footer div:last-child{
+    height: 20px;
+}
+
+#cover-footer div:last-child h3{
+    float: right;
+    margin: 0;
+    padding: 0;
+    color: #d5d5d5;
+    font-size: 1em;
+}
+
 
 @media (max-width: 991px) {
     #cover div a{
@@ -224,4 +261,13 @@ a:hover{
     }
 }
 
+/*Page Location view*/
+.page-location h2{
+    font-size: 1.4em;
+    color: #A8D0FF;
+}
+
+.page-location h2 a{
+    color: #8A8A8A;
+}
 
