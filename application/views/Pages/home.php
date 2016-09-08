@@ -4,6 +4,7 @@
     <title><?php echo $title; ?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>public/images/icon.ico" />
     <?php $this->load->view('templates/common_style_tags.php'); ?>    
 </head>	
 <body> 
